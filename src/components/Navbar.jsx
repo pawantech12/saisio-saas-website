@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
-
+import logoImg from "../../public/images/logo.png";
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isVisible, setIsVisible] = useState(true);
@@ -39,7 +39,7 @@ const Navbar = () => {
       <div className="px-24 py-5 flex items-center justify-between">
         <div>
           <Link>
-            <img src="./images/logo.png" alt="Logo Image" />
+            <img src={logoImg} alt="Logo Image" />
           </Link>
         </div>
         <nav>
@@ -66,6 +66,14 @@ const Navbar = () => {
                 className="hover:text-primary font-medium text-neutral-700 transition-colors ease-in-out duration-200"
               >
                 Blog
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/faq"
+                className="hover:text-primary font-medium text-neutral-700 transition-colors ease-in-out duration-200"
+              >
+                FAQ
               </Link>
             </li>
             <li>
