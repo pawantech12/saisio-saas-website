@@ -14,6 +14,7 @@ import Faq from "./pages/Faq.jsx";
 import BlogList from "./pages/BlogList.jsx";
 import Author from "./pages/Author.jsx";
 import NotFound from "./pages/NotFound.jsx";
+import Feature from "./pages/Feature.jsx";
 
 const router = createBrowserRouter([
   {
@@ -55,6 +56,10 @@ const router = createBrowserRouter([
   {
     path: "/author",
     element: <App element={<Author />} />,
+  },
+  {
+    path: "/feature",
+    element: <App element={<Feature />} />,
   },
   {
     path: "*",
