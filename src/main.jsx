@@ -15,6 +15,7 @@ import BlogList from "./pages/BlogList.jsx";
 import Author from "./pages/Author.jsx";
 import NotFound from "./pages/NotFound.jsx";
 import Feature from "./pages/Feature.jsx";
+import About from "./pages/About.jsx";
 
 const router = createBrowserRouter([
   {
@@ -60,6 +61,10 @@ const router = createBrowserRouter([
   {
     path: "/feature",
     element: <App element={<Feature />} />,
+  },
+  {
+    path: "/about",
+    element: <App element={<About />} />,
   },
   {
     path: "*",

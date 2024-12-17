@@ -58,6 +58,24 @@ const Feature = () => {
 
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+  const [scrollDirection, setScrollDirection] = useState(null); // "up" or "down"
+
+  useEffect(() => {
+    let lastScrollY = window.scrollY;
+
+    const handleScroll = () => {
+      if (window.scrollY > lastScrollY) {
+        setScrollDirection("down"); // Scrolling downward
+      } else if (window.scrollY < lastScrollY) {
+        setScrollDirection("up"); // Scrolling upward
+      }
+      lastScrollY = window.scrollY;
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
     <>
@@ -134,6 +152,102 @@ const Feature = () => {
         </div>
       </section>
       <AnalyticSection />
+      <section className="px-24 py-20">
+        {/* Heading and Description */}
+        <div className="space-y-5 w-3/4">
+          <h4 className="text-neutral-800 font-semibold text-5xl leading-[3.6rem]">
+            Our data processing is secured and safe. Know the reason
+          </h4>
+          <p className="text-xl text-zinc-600">
+            Securing a business analytics app is crucial to protect sensitive
+            information. Here are the reason behind our super secured data
+            processing:
+          </p>
+        </div>
+
+        {/* Cards Section */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
+          {/* Card 1 */}
+          <div className="relative">
+            <div className="flex relative z-10">
+              {/* secured1 Image */}
+              <img
+                src="images/secured1.png"
+                alt="secured image 1"
+                className={`w-80 ml-10 transition-transform duration-500 ${
+                  scrollDirection === "down"
+                    ? "translate-y-[-30px]"
+                    : scrollDirection === "up"
+                    ? "translate-y-[30px]"
+                    : ""
+                }`}
+              />
+              {/* secured2 Image */}
+              <img
+                src="images/secured2.png"
+                alt="secured image 2"
+                className={`w-56 h-fit self-end absolute right-20 bottom-0 transition-transform duration-500 ${
+                  scrollDirection === "down"
+                    ? "translate-y-[30px]"
+                    : scrollDirection === "up"
+                    ? "translate-y-[-30px]"
+                    : ""
+                }`}
+              />
+            </div>
+            <div className="p-8 pt-32 bg-primary text-white rounded-lg flex flex-col items-start shadow-lg -mt-24">
+              <h3 className="text-4xl font-semibold mb-3">
+                Compliance with Data Protection Regulations
+              </h3>
+              <p className="text-lg text-white opacity-90">
+                Compliance from relevant data protection regulations such as
+                GDPR or CCPA, ensures the security or safety of your valuable
+                data.
+              </p>
+            </div>
+          </div>
+
+          {/* Card 2 */}
+          <div className="relative">
+            <div className="flex relative z-10">
+              {/* secured3 Image */}
+              <img
+                src="images/secured3.png"
+                alt="secured image 3"
+                className={`w-80 ml-10 transition-transform duration-500 ${
+                  scrollDirection === "down"
+                    ? "translate-y-[-30px]"
+                    : scrollDirection === "up"
+                    ? "translate-y-[30px]"
+                    : ""
+                }`}
+              />
+              {/* secured4 Image */}
+              <img
+                src="images/secured4.png"
+                alt="secured image 4"
+                className={`w-56 h-fit self-end absolute right-20 bottom-0 transition-transform duration-500 ${
+                  scrollDirection === "down"
+                    ? "translate-y-[30px]"
+                    : scrollDirection === "up"
+                    ? "translate-y-[-30px]"
+                    : ""
+                }`}
+              />
+            </div>
+            <div className="p-8 pt-32 bg-[#042f47] text-white rounded-lg flex flex-col items-start shadow-lg -mt-24">
+              <h3 className="text-4xl font-semibold mb-3">
+                Regular Security Audits and Testing
+              </h3>
+              <p className="text-lg text-white opacity-90">
+                Our inbuilt system conducts security audits and penetration
+                tests on a regular basis to identify vulnerabilities and
+                weaknesses.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
       <FeatureSection />
       <CtaSection />
     </>
