@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Integration = () => {
   return (
     <>
@@ -51,7 +53,7 @@ const Integration = () => {
           hover:translate-x-1 hover:translate-y-1
         "
               >
-                Get Started
+                <Link to={"/single-integration"}>Get Started</Link>
               </button>
             </div>
           </div>
@@ -94,7 +96,7 @@ const Integration = () => {
           hover:translate-x-1 hover:translate-y-1
         "
               >
-                Get Started
+                <Link to={"/single-integration"}>Get Started</Link>
               </button>
             </div>
           </div>
@@ -137,7 +139,7 @@ const Integration = () => {
           hover:translate-x-1 hover:translate-y-1
         "
               >
-                Get Started
+                <Link to={"/single-integration"}>Get Started</Link>
               </button>
             </div>
           </div>
@@ -180,7 +182,7 @@ const Integration = () => {
           hover:translate-x-1 hover:translate-y-1
         "
               >
-                Get Started
+                <Link to={"/single-integration"}>Get Started</Link>
               </button>
             </div>
           </div>
@@ -223,7 +225,7 @@ const Integration = () => {
           hover:translate-x-1 hover:translate-y-1
         "
               >
-                Get Started
+                <Link to={"/single-integration"}>Get Started</Link>
               </button>
             </div>
           </div>
@@ -266,7 +268,7 @@ const Integration = () => {
           hover:translate-x-1 hover:translate-y-1
         "
               >
-                Get Started
+                <Link to={"/single-integration"}>Get Started</Link>
               </button>
             </div>
           </div>

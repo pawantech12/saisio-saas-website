@@ -55,27 +55,42 @@ const Footer = () => {
           <h4 className="text-2xl font-medium text-neutral-800">Menu</h4>
           <ul className="mt-7 flex flex-col gap-4">
             <li>
-              <Link className="text-xl text-neutral-800 hover:text-primary transition-colors ease-in-out duration-200">
+              <Link
+                className="text-xl text-neutral-800 hover:text-primary transition-colors ease-in-out duration-200"
+                to={"/"}
+              >
                 Home
               </Link>
             </li>
             <li>
-              <Link className="text-xl text-neutral-800 hover:text-primary transition-colors ease-in-out duration-200">
+              <Link
+                className="text-xl text-neutral-800 hover:text-primary transition-colors ease-in-out duration-200"
+                to={"/about"}
+              >
                 About Us
               </Link>
             </li>
             <li>
-              <Link className="text-xl text-neutral-800 hover:text-primary transition-colors ease-in-out duration-200">
+              <Link
+                className="text-xl text-neutral-800 hover:text-primary transition-colors ease-in-out duration-200"
+                to={"/blog"}
+              >
                 Blog
               </Link>
             </li>
             <li>
-              <Link className="text-xl text-neutral-800 hover:text-primary transition-colors ease-in-out duration-200">
+              <Link
+                className="text-xl text-neutral-800 hover:text-primary transition-colors ease-in-out duration-200"
+                to={"/integrations"}
+              >
                 Integration
               </Link>
             </li>
             <li>
-              <Link className="text-xl text-neutral-800 hover:text-primary transition-colors ease-in-out duration-200">
+              <Link
+                className="text-xl text-neutral-800 hover:text-primary transition-colors ease-in-out duration-200"
+                to={"/contact"}
+              >
                 Contact Us
               </Link>
             </li>
@@ -87,38 +102,43 @@ const Footer = () => {
           </h4>
           <ul className="mt-7 flex flex-col gap-4">
             <li>
-              <Link className="text-xl text-neutral-800 hover:text-primary transition-colors ease-in-out duration-200">
+              <Link
+                className="text-xl text-neutral-800 hover:text-primary transition-colors ease-in-out duration-200"
+                to={"/sign-up"}
+              >
                 Create Account
               </Link>
             </li>
             <li>
-              <Link className="text-xl text-neutral-800 hover:text-primary transition-colors ease-in-out duration-200">
+              <Link
+                className="text-xl text-neutral-800 hover:text-primary transition-colors ease-in-out duration-200"
+                to={"/login"}
+              >
                 Sign In
               </Link>
             </li>
             <li>
-              <Link className="text-xl text-neutral-800 hover:text-primary transition-colors ease-in-out duration-200">
+              <Link
+                className="text-xl text-neutral-800 hover:text-primary transition-colors ease-in-out duration-200"
+                to={"/forgot-password"}
+              >
                 Forgot Password
               </Link>
             </li>
             <li>
-              <Link className="text-xl text-neutral-800 hover:text-primary transition-colors ease-in-out duration-200">
+              <Link
+                className="text-xl text-neutral-800 hover:text-primary transition-colors ease-in-out duration-200"
+                to={"/404"}
+              >
                 404 Not Found
               </Link>
             </li>
             <li>
-              <Link className="text-xl text-neutral-800 hover:text-primary transition-colors ease-in-out duration-200">
+              <Link
+                className="text-xl text-neutral-800 hover:text-primary transition-colors ease-in-out duration-200"
+                to={"/401"}
+              >
                 Password Protected
-              </Link>
-            </li>
-            <li>
-              <Link className="text-xl text-neutral-800 hover:text-primary transition-colors ease-in-out duration-200">
-                Licenses
-              </Link>
-            </li>
-            <li>
-              <Link className="text-xl text-neutral-800 hover:text-primary transition-colors ease-in-out duration-200">
-                Changelog
               </Link>
             </li>
           </ul>

@@ -3,7 +3,7 @@ import React from "react";
 const Contact = () => {
   return (
     <>
-      <section className="py-20">
+      <section>
         <div className="text-center bg-[url('/images/bgimg.jpg')] bg-cover px-24 py-28 rounded-br-full">
           {" "}
           <small className="text-2xl font-medium text-primary">

@@ -16,6 +16,9 @@ import Author from "./pages/Author.jsx";
 import NotFound from "./pages/NotFound.jsx";
 import Feature from "./pages/Feature.jsx";
 import About from "./pages/About.jsx";
+import PasswordProtected from "./pages/PasswordProtected.jsx";
+import SingleBlog from "./pages/SingleBlog.jsx";
+import SingleIntegration from "./pages/SingleIntegration.jsx";
 
 const router = createBrowserRouter([
   {
@@ -67,8 +70,20 @@ const router = createBrowserRouter([
     element: <App element={<About />} />,
   },
   {
+    path: "/single-blog",
+    element: <App element={<SingleBlog />} />,
+  },
+  {
+    path: "/single-integration",
+    element: <App element={<SingleIntegration />} />,
+  },
+  {
     path: "*",
     element: <App element={<NotFound />} />,
+  },
+  {
+    path: "/401",
+    element: <PasswordProtected />,
   },
 ]);
 

@@ -87,7 +87,10 @@ const Navbar = () => {
           </ul>
         </nav>
         <div className="flex items-center gap-5">
-          <Link className="hover:text-primary font-medium text-neutral-700 transition-colors ease-in-out duration-200 text-lg">
+          <Link
+            to={"/login"}
+            className="hover:text-primary font-medium text-neutral-700 transition-colors ease-in-out duration-200 text-lg"
+          >
             Sign In
           </Link>
           <button

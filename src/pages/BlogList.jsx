@@ -61,7 +61,7 @@ const BlogList = () => {
           h-fit
         "
                   >
-                    Read More
+                    <Link to={"/single-blog"}>Get Started</Link>
                   </button>
                 </div>
               </div>
@@ -193,7 +193,7 @@ const BlogList = () => {
           h-fit
         "
                     >
-                      Read More
+                      <Link to={"/single-blog"}>Get Started</Link>
                     </button>
                   </div>
                 </div>

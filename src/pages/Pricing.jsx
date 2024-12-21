@@ -2,6 +2,7 @@ import { useState } from "react";
 import { FaMinus, FaPlus } from "react-icons/fa";
 import CtaSection from "../components/CtaSection";
 import accordionData from "../data/accordion.data";
+import { Link } from "react-router-dom";
 
 const Pricing = () => {
   const [activeIndex, setActiveIndex] = useState(null);
@@ -21,77 +22,84 @@ const Pricing = () => {
           </h3>
         </div>
         <div className="mt-16 grid grid-cols-3 gap-5 px-24">
-          <div className="border border-title rounded-xl shadow-[4px_4px_0_0] shadow-title">
-            <div className="p-10 flex justify-between items-center gap-4 bg-lightPink rounded-xl">
-              <div className="flex flex-col gap-2">
-                <h4 className="text-2xl text-primary font-medium">Starter</h4>
-                <span className="text-3xl font-semibold text-neutral-800">
-                  $ 29.00 USD
-                </span>
-                <small className="text-zinc-600 text-xl">Monthly</small>
-              </div>
-              <figure>
-                <img
-                  src="./images/send.svg"
-                  alt="send svg image"
-                  className="w-12"
-                />
-              </figure>
-            </div>
-            <hr className="h-[1px] border-none bg-title" />
-            <div className="px-10 py-7  space-y-5">
-              <ul className="space-y-5">
-                <li className="flex gap-2 items-center text-xl text-zinc-600">
-                  <img
-                    src="./images/tick2.svg"
-                    alt="tick2 image"
-                    className="w-6"
-                  />
-                  Website Analytics
-                </li>
-                <li className="flex gap-2 items-center text-xl text-zinc-600">
-                  <img
-                    src="./images/tick2.svg"
-                    alt="tick2 image"
-                    className="w-6"
-                  />
-                  1 Data Workspaces
-                </li>
-                <li className="flex gap-2 items-center text-xl text-zinc-600">
-                  <img
-                    src="./images/tick2.svg"
-                    alt="tick2 image"
-                    className="w-6"
-                  />
-                  1 User
-                </li>
-                <li className="flex gap-2 items-center text-xl text-zinc-600">
-                  <img
-                    src="./images/tick2.svg"
-                    alt="tick2 image"
-                    className="w-6"
-                  />
-                  Up to 1,000 Tracked Users
-                </li>
-                <li className="flex gap-2 items-center text-xl text-zinc-600">
-                  <img
-                    src="./images/tick2.svg"
-                    alt="tick2 image"
-                    className="w-6"
-                  />
-                  Custom Reports
-                </li>
-                <li className="flex gap-2 items-center text-xl text-zinc-600">
-                  <img
-                    src="./images/tick2.svg"
-                    alt="tick2 image"
-                    className="w-6"
-                  />
-                  Mobile App
-                </li>
-              </ul>
-              <button
-                className="
+          {[1, 2, 3].map((item) => {
+            return (
+              <div
+                className="border border-title rounded-xl shadow-[4px_4px_0_0] shadow-title"
+                key={item}
+              >
+                <div className="p-10 flex justify-between items-center gap-4 bg-lightPink rounded-xl">
+                  <div className="flex flex-col gap-2">
+                    <h4 className="text-2xl text-primary font-medium">
+                      Starter
+                    </h4>
+                    <span className="text-3xl font-semibold text-neutral-800">
+                      $ 29.00 USD
+                    </span>
+                    <small className="text-zinc-600 text-xl">Monthly</small>
+                  </div>
+                  <figure>
+                    <img
+                      src="./images/send.svg"
+                      alt="send svg image"
+                      className="w-12"
+                    />
+                  </figure>
+                </div>
+                <hr className="h-[1px] border-none bg-title" />
+                <div className="px-10 py-7  space-y-5">
+                  <ul className="space-y-5">
+                    <li className="flex gap-2 items-center text-xl text-zinc-600">
+                      <img
+                        src="./images/tick2.svg"
+                        alt="tick2 image"
+                        className="w-6"
+                      />
+                      Website Analytics
+                    </li>
+                    <li className="flex gap-2 items-center text-xl text-zinc-600">
+                      <img
+                        src="./images/tick2.svg"
+                        alt="tick2 image"
+                        className="w-6"
+                      />
+                      1 Data Workspaces
+                    </li>
+                    <li className="flex gap-2 items-center text-xl text-zinc-600">
+                      <img
+                        src="./images/tick2.svg"
+                        alt="tick2 image"
+                        className="w-6"
+                      />
+                      1 User
+                    </li>
+                    <li className="flex gap-2 items-center text-xl text-zinc-600">
+                      <img
+                        src="./images/tick2.svg"
+                        alt="tick2 image"
+                        className="w-6"
+                      />
+                      Up to 1,000 Tracked Users
+                    </li>
+                    <li className="flex gap-2 items-center text-xl text-zinc-600">
+                      <img
+                        src="./images/tick2.svg"
+                        alt="tick2 image"
+                        className="w-6"
+                      />
+                      Custom Reports
+                    </li>
+                    <li className="flex gap-2 items-center text-xl text-zinc-600">
+                      <img
+                        src="./images/tick2.svg"
+                        alt="tick2 image"
+                        className="w-6"
+                      />
+                      Mobile App
+                    </li>
+                  </ul>
+                  <button
+                    className="
           border border-title 
           bg-primary 
           shadow-[3px_3px_0_0] 
@@ -110,11 +118,11 @@ const Pricing = () => {
           hover:translate-x-1 hover:translate-y-1
           w-full mt-6
         "
-              >
-                Get Started
-              </button>
-              <button
-                className="
+                  >
+                    <Link to={"/sign-up"}>Get Started</Link>
+                  </button>
+                  <button
+                    className="
           border border-title 
           bg-white 
           shadow-[3px_3px_0_0] 
@@ -134,247 +142,13 @@ const Pricing = () => {
           hover:translate-x-1 hover:translate-y-1
           w-full
         "
-              >
-                Browse all features
-              </button>
-            </div>
-          </div>
-          <div className="border border-title rounded-xl shadow-[4px_4px_0_0] shadow-title">
-            <div className="p-10 flex justify-between items-center gap-4 bg-lightPink rounded-xl">
-              <div className="flex flex-col gap-2">
-                <h4 className="text-2xl text-primary font-medium">Starter</h4>
-                <span className="text-3xl font-semibold text-neutral-800">
-                  $ 29.00 USD
-                </span>
-                <small className="text-zinc-600 text-xl">Monthly</small>
+                  >
+                    <Link to={"/feature"}>Browse all features</Link>
+                  </button>
+                </div>
               </div>
-              <figure>
-                <img
-                  src="./images/send.svg"
-                  alt="send svg image"
-                  className="w-12"
-                />
-              </figure>
-            </div>
-            <hr className="h-[1px] border-none bg-title" />
-            <div className="px-10 py-7  space-y-5">
-              <ul className="space-y-5">
-                <li className="flex gap-2 items-center text-xl text-zinc-600">
-                  <img
-                    src="./images/tick2.svg"
-                    alt="tick2 image"
-                    className="w-6"
-                  />
-                  Website Analytics
-                </li>
-                <li className="flex gap-2 items-center text-xl text-zinc-600">
-                  <img
-                    src="./images/tick2.svg"
-                    alt="tick2 image"
-                    className="w-6"
-                  />
-                  1 Data Workspaces
-                </li>
-                <li className="flex gap-2 items-center text-xl text-zinc-600">
-                  <img
-                    src="./images/tick2.svg"
-                    alt="tick2 image"
-                    className="w-6"
-                  />
-                  1 User
-                </li>
-                <li className="flex gap-2 items-center text-xl text-zinc-600">
-                  <img
-                    src="./images/tick2.svg"
-                    alt="tick2 image"
-                    className="w-6"
-                  />
-                  Up to 1,000 Tracked Users
-                </li>
-                <li className="flex gap-2 items-center text-xl text-zinc-600">
-                  <img
-                    src="./images/tick2.svg"
-                    alt="tick2 image"
-                    className="w-6"
-                  />
-                  Custom Reports
-                </li>
-                <li className="flex gap-2 items-center text-xl text-zinc-600">
-                  <img
-                    src="./images/tick2.svg"
-                    alt="tick2 image"
-                    className="w-6"
-                  />
-                  Mobile App
-                </li>
-              </ul>
-              <button
-                className="
-          border border-title 
-          bg-primary 
-          shadow-[3px_3px_0_0] 
-          shadow-title 
-          text-white 
-          text-center 
-          rounded-md 
-          px-[37px] py-[15px] 
-          font-semibold 
-          text-xl 
-          leading-6 
-          transition-all 
-          duration-300 
-          hover:bg-title 
-          hover:shadow-none 
-          hover:translate-x-1 hover:translate-y-1
-          w-full mt-6
-        "
-              >
-                Get Started
-              </button>
-              <button
-                className="
-          border border-title 
-          bg-white 
-          shadow-[3px_3px_0_0] 
-          shadow-title 
-          text-title 
-          text-center 
-          rounded-md 
-          px-[37px] py-[15px]
-          font-semibold 
-          text-xl 
-          leading-6 
-          transition-all 
-          duration-300 
-          hover:bg-primary
-          hover:text-white 
-          hover:shadow-none 
-          hover:translate-x-1 hover:translate-y-1
-          w-full
-        "
-              >
-                Browse all features
-              </button>
-            </div>
-          </div>
-          <div className="border border-title rounded-xl shadow-[4px_4px_0_0] shadow-title">
-            <div className="p-10 flex justify-between items-center gap-4 bg-lightPink rounded-xl">
-              <div className="flex flex-col gap-2">
-                <h4 className="text-2xl text-primary font-medium">Starter</h4>
-                <span className="text-3xl font-semibold text-neutral-800">
-                  $ 29.00 USD
-                </span>
-                <small className="text-zinc-600 text-xl">Monthly</small>
-              </div>
-              <figure>
-                <img
-                  src="./images/send.svg"
-                  alt="send svg image"
-                  className="w-12"
-                />
-              </figure>
-            </div>
-            <hr className="h-[1px] border-none bg-title" />
-            <div className="px-10 py-7  space-y-5">
-              <ul className="space-y-5">
-                <li className="flex gap-2 items-center text-xl text-zinc-600">
-                  <img
-                    src="./images/tick2.svg"
-                    alt="tick2 image"
-                    className="w-6"
-                  />
-                  Website Analytics
-                </li>
-                <li className="flex gap-2 items-center text-xl text-zinc-600">
-                  <img
-                    src="./images/tick2.svg"
-                    alt="tick2 image"
-                    className="w-6"
-                  />
-                  1 Data Workspaces
-                </li>
-                <li className="flex gap-2 items-center text-xl text-zinc-600">
-                  <img
-                    src="./images/tick2.svg"
-                    alt="tick2 image"
-                    className="w-6"
-                  />
-                  1 User
-                </li>
-                <li className="flex gap-2 items-center text-xl text-zinc-600">
-                  <img
-                    src="./images/tick2.svg"
-                    alt="tick2 image"
-                    className="w-6"
-                  />
-                  Up to 1,000 Tracked Users
-                </li>
-                <li className="flex gap-2 items-center text-xl text-zinc-600">
-                  <img
-                    src="./images/tick2.svg"
-                    alt="tick2 image"
-                    className="w-6"
-                  />
-                  Custom Reports
-                </li>
-                <li className="flex gap-2 items-center text-xl text-zinc-600">
-                  <img
-                    src="./images/tick2.svg"
-                    alt="tick2 image"
-                    className="w-6"
-                  />
-                  Mobile App
-                </li>
-              </ul>
-              <button
-                className="
-          border border-title 
-          bg-primary 
-          shadow-[3px_3px_0_0] 
-          shadow-title 
-          text-white 
-          text-center 
-          rounded-md 
-          px-[37px] py-[15px] 
-          font-semibold 
-          text-xl 
-          leading-6 
-          transition-all 
-          duration-300 
-          hover:bg-title 
-          hover:shadow-none 
-          hover:translate-x-1 hover:translate-y-1
-          w-full mt-6
-        "
-              >
-                Get Started
-              </button>
-              <button
-                className="
-          border border-title 
-          bg-white 
-          shadow-[3px_3px_0_0] 
-          shadow-title 
-          text-title 
-          text-center 
-          rounded-md 
-          px-[37px] py-[15px]
-          font-semibold 
-          text-xl 
-          leading-6 
-          transition-all 
-          duration-300 
-          hover:bg-primary
-          hover:text-white 
-          hover:shadow-none 
-          hover:translate-x-1 hover:translate-y-1
-          w-full
-        "
-              >
-                Browse all features
-              </button>
-            </div>
-          </div>
+            );
+          })}
         </div>
       </section>
       <section className="px-24 py-20 bg-lightPink">
