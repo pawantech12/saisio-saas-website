@@ -5,20 +5,20 @@ const SingleIntegration = () => {
   return (
     <>
       <section>
-        <div className="text-center bg-[url('/images/bgimg.jpg')] bg-cover px-24 py-28 rounded-br-full">
+        <div className="text-center bg-[url('/images/bgimg.jpg')] bg-cover px-24 py-28 rounded-br-full max-md:px-5">
           {" "}
           <small className="text-2xl font-medium text-primary">
             How to integrate
           </small>
-          <h3 className="text-[52px] font-semibold text-neutral-800 ">
+          <h3 className="text-[52px] font-semibold text-neutral-800 max-md:text-[40px]">
             Shopify
           </h3>
         </div>
       </section>
-      <section className=" px-24 my-10">
-        <div className="p-16 rounded-xl bg-lightPink flex items-center justify-between gap-5">
-          <div className="w-1/2 space-y-6">
-            <h4 className="text-5xl font-semibold text-neutral-800">
+      <section className=" px-24 my-10 max-lg:px-5">
+        <div className="p-16 rounded-xl bg-lightPink flex items-center justify-between gap-5 max-lg:flex-col max-lg:items-start max-md:p-10">
+          <div className="w-1/2 space-y-6 max-lg:w-full">
+            <h4 className="text-5xl font-semibold text-neutral-800 max-lg:text[40px] max-sm:text-4xl">
               Integrate Shopify with Saisio
             </h4>
             <p className="text-2xl ">
@@ -51,13 +51,13 @@ const SingleIntegration = () => {
           </button>
         </div>
       </section>
-      <section className=" px-24 my-10">
+      <section className=" px-24 my-10 max-lg:px-5">
         <figure>
           <img src="./images/integrationdetail.jpg" alt="integration image" />
         </figure>
-        <div className="mt-10 flex gap-5 relative">
-          <div className="space-y-6  w-4/6">
-            <h3 className="text-5xl font-semibold text-neutral-800">
+        <div className="mt-10 flex gap-5 relative max-md:flex-col-reverse">
+          <div className="space-y-6  w-4/6 max-md:w-full">
+            <h3 className="text-5xl font-semibold text-neutral-800  max-md:text-[40px]">
               How to Integrate?
             </h3>
             <p className="text-xl">
@@ -188,9 +188,9 @@ const SingleIntegration = () => {
               </ul>
             </div>
           </div>
-          <div className="border border-title  shadow-[4px_4px_0_0] shadow-title px-8 py-8 rounded-xl space-y-4 w-4/12 h-fit sticky top-12">
+          <div className="border border-title  shadow-[4px_4px_0_0] shadow-title px-8 py-8 rounded-xl space-y-4 w-4/12 h-fit md:sticky md:top-12 max-md:w-full block">
             <div>
-              <h3 className="font-medium text-3xl text-neutral-800">
+              <h3 className="font-medium text-3xl text-neutral-800 max-sm:text-xl">
                 Available on
               </h3>
               <p className="text-neutral-600 text-xl mt-3">
@@ -199,14 +199,14 @@ const SingleIntegration = () => {
             </div>
             <hr className="border-neutral-300 border-dashed border-[1px]" />
             <div>
-              <h3 className="font-medium text-3xl text-neutral-800">
+              <h3 className="font-medium text-3xl text-neutral-800 max-sm:text-xl">
                 Category
               </h3>
               <p className="text-neutral-600 text-xl mt-3">Ecommerce</p>
             </div>
             <hr className="border-neutral-300 border-dashed border-[1px]" />
             <div>
-              <h3 className="font-medium text-3xl text-neutral-800">
+              <h3 className="font-medium text-3xl text-neutral-800  max-sm:text-xl">
                 Requirements
               </h3>
               <p className="text-neutral-600 text-xl mt-3">

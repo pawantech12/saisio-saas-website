@@ -2,13 +2,13 @@ import { Link } from "react-router-dom";
 
 const IntegrationSection = () => {
   return (
-    <section className="px-24 py-24">
+    <section className="px-24 py-24 max-md:px-5">
       <div className="text-center">
-        <h3 className="text-[52px] font-semibold text-neutral-800 ">
+        <h3 className="text-[52px] font-semibold text-neutral-800 max-md:text-[40px]">
           Integrated with all the tools you know and love
         </h3>
       </div>
-      <div className="mt-16 grid grid-cols-3 gap-5">
+      <div className="mt-16 grid grid-cols-3 gap-5 max-lg:grid-cols-2 max-sm:grid-cols-1">
         <div className="border border-title rounded-xl shadow-[4px_4px_0_0] shadow-title">
           <div className="p-10 flex items-center gap-4 bg-lightPink rounded-xl">
             <figure className="border border-title rounded-full w-[85px] h-[85px] shadow-[4px_4px_0_0] shadow-title flex items-center justify-center">

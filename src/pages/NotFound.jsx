@@ -2,12 +2,12 @@ import { Link } from "react-router-dom";
 import notFoundImg from "../../public/images/404.png";
 const NotFound = () => {
   return (
-    <section className="h-full  flex justify-center items-center">
-      <div className="text-center space-y-3 my-24">
+    <section className="h-full  flex justify-center items-center max-md:h-screen">
+      <div className="text-center space-y-3 my-24 max-md:px-5">
         <figure>
           <img src={notFoundImg} alt="404 not found image" />
         </figure>
-        <h3 className="text-[52px] font-semibold text-neutral-800 ">
+        <h3 className="text-[52px] font-semibold text-neutral-800 max-md:text-[40px]">
           Page Not Found
         </h3>
         <button

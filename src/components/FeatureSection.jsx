@@ -1,12 +1,12 @@
 const FeatureSection = () => {
   return (
-    <section className="px-24 py-24 bg-lightPink">
+    <section className="px-24 py-24 bg-lightPink max-md:px-5">
       <div className="text-center">
-        <h3 className="text-[52px] font-semibold text-neutral-800 ">
+        <h3 className="text-[52px] font-semibold text-neutral-800 max-md:text-[40px]">
           You will get best features to help your daily work
         </h3>
       </div>
-      <div className="mt-16 grid grid-cols-3 gap-5">
+      <div className="mt-16 grid grid-cols-3 gap-5 max-md:grid-cols-2 max-[500px]:grid-cols-1">
         <div className="flex flex-col gap-5">
           <div className="relative flex flex-col gap-6 px-7 pt-7">
             <img
@@ -74,7 +74,7 @@ const FeatureSection = () => {
           </div>
         </div>
       </div>
-      <div className="flex items-center justify-center gap-5 mt-16">
+      <div className="flex items-center justify-center gap-5 mt-16 max-sm:flex-col">
         <button
           className="
           border border-title 
@@ -93,6 +93,7 @@ const FeatureSection = () => {
           hover:bg-title 
           hover:shadow-none 
           hover:translate-x-1 hover:translate-y-1
+          max-sm:w-full
         "
         >
           Get Started
@@ -116,6 +117,7 @@ const FeatureSection = () => {
           hover:text-white 
           hover:shadow-none 
           hover:translate-x-1 hover:translate-y-1
+          max-sm:w-full
         "
         >
           Browse all features

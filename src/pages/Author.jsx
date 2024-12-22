@@ -11,16 +11,16 @@ const Author = () => {
   return (
     <>
       <section>
-        <div className=" bg-[url('/images/bgimg.jpg')] bg-cover px-24 py-28 rounded-br-full w-full text-center flex flex-col items-center gap-5">
+        <div className=" bg-[url('/images/bgimg.jpg')] bg-cover px-24 py-28 rounded-br-full w-full text-center flex flex-col items-center gap-5 max-md:px-5">
           {" "}
-          <figure className="w-56 h-56 ">
+          <figure className="w-56 h-56  max-md:w-40 max-md:h-40">
             <img
               src="./images/profile.jpg"
               alt="profile image"
               className="w-full h-full rounded-full"
             />
           </figure>
-          <h3 className="text-[52px] font-semibold text-neutral-800 ">
+          <h3 className="text-[52px] font-semibold text-neutral-800 max-md:text-4xl">
             Colin Mathieu
           </h3>
           <p className="text-xl">
@@ -141,9 +141,9 @@ const Author = () => {
           </ul>
         </div>
       </section>
-      <section className="px-24 py-20">
-        <div className="flex justify-between gap-5 items-center">
-          <h3 className="text-[52px] font-semibold text-neutral-800 w-1/2 leading-[3.7rem]">
+      <section className="px-24 py-20 max-md:px-5">
+        <div className="flex justify-between gap-5 items-center max-[500px]:flex-col">
+          <h3 className="text-[52px] font-semibold text-neutral-800 w-1/2 leading-[3.7rem] max-md:text-[40px] max-md:leading-[3rem] max-md:w-4/5 max-[500px]:w-full max-[500px]:text-center">
             Blogs From the Author
           </h3>
           <button
@@ -171,7 +171,7 @@ const Author = () => {
             More Articles
           </button>
         </div>
-        <div className="grid grid-cols-3 gap-5 mt-14">
+        <div className="grid grid-cols-3 gap-5 mt-14 max-lg:grid-cols-2 max-sm:grid-cols-1">
           {[1, 2, 3, 4, 5, 6].map((item, index) => {
             return (
               <div

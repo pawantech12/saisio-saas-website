@@ -4,16 +4,16 @@ const BlogList = () => {
   return (
     <>
       <section className="flex flex-col items-center">
-        <div className="text-center bg-[url('/images/bgimg.jpg')] bg-cover px-24 py-28 rounded-br-full w-full">
+        <div className="text-center bg-[url('/images/bgimg.jpg')] bg-cover px-24 py-28 rounded-br-full w-full max-md:px-5">
           {" "}
           <small className="text-2xl font-medium text-primary">
             News & Articles
           </small>
-          <h3 className="text-[52px] font-semibold text-neutral-800 ">
+          <h3 className="text-[52px] font-semibold text-neutral-800 max-md:text-[40px]">
             Browse our latest articles & news
           </h3>
         </div>
-        <div className="grid grid-cols-3 gap-5 mt-14 px-24">
+        <div className="grid grid-cols-3 gap-5 mt-14 px-24 max-lg:px-5 max-lg:grid-cols-2 max-sm:grid-cols-1">
           {[1, 2, 3, 4, 5, 6].map((item, index) => {
             return (
               <div
@@ -27,7 +27,7 @@ const BlogList = () => {
                     alt="blog article image 1"
                   />
                 </figure>
-                <div className="px-8 py-7 space-y-5">
+                <div className="px-8 py-7 space-y-5 max-md:px-5">
                   <div className="flex items-center justify-between gap-5">
                     <span className="px-4 py-[3px] bg-lighterPink text-zinc-700 hover:bg-zinc-600 hover:text-white rounded-full transition-colors ease-in-out duration-200 text-lg">
                       Integration
@@ -36,7 +36,7 @@ const BlogList = () => {
                       September 9, 2023
                     </span>
                   </div>
-                  <h4 className="text-3xl font-semibold text-neutral-800">
+                  <h4 className="text-3xl font-semibold text-neutral-800 max-md:text-2xl">
                     Cybersecurity in Finance: Protecting Your Assets
                   </h4>
                   <button
@@ -92,22 +92,22 @@ const BlogList = () => {
           Next
         </button>
       </section>
-      <section className="py-20 px-24">
-        <div className="py-8 px-10 border border-title rounded-xl shadow-[4px_4px_0_0] shadow-title">
+      <section className="py-20 px-24 max-lg:px-20 max-md:px-5">
+        <div className="py-8 px-10 border border-title rounded-xl shadow-[4px_4px_0_0] shadow-title max-md:px-3">
           <div>
             <h4 className="text-2xl  font-medium text-primary text-center">
               Featured Author
             </h4>
           </div>
-          <div className="mt-8 flex items-center gap-7">
-            <figure className="bg-purple-100 w-1/2 p-5 rounded-xl">
+          <div className="mt-8 flex items-center gap-7 max-md:flex-col">
+            <figure className="bg-purple-100 w-1/2 p-5 rounded-xl max-md:w-full">
               <img
                 src="./images/man.jpg"
                 alt="man image"
                 className="rounded-xl"
               />
             </figure>
-            <div className="w-1/2 space-y-4">
+            <div className="w-1/2 space-y-4 max-md:w-full">
               <h4>
                 <Link className="text-neutral-800 text-2xl font-semibold hover:text-primary transition-colors ease-in-out duration-200">
                   Colin Mathieu
@@ -145,7 +145,7 @@ const BlogList = () => {
               </button>
             </div>
           </div>
-          <div className="grid grid-cols-3 gap-5 mt-14">
+          <div className="grid grid-cols-3 gap-5 mt-14 max-lg:grid-cols-2 max-sm:grid-cols-1">
             {[1, 2, 3].map((item, index) => {
               return (
                 <div
@@ -159,7 +159,7 @@ const BlogList = () => {
                       alt="blog article image 1"
                     />
                   </figure>
-                  <div className="px-8 py-7 space-y-5">
+                  <div className="px-8 py-7 space-y-5 max-md:px-5">
                     <div className="flex items-center justify-between gap-5">
                       <span className="px-4 py-[3px] bg-lighterPink text-zinc-700 hover:bg-zinc-600 hover:text-white rounded-full transition-colors ease-in-out duration-200 text-lg">
                         Integration
@@ -168,7 +168,7 @@ const BlogList = () => {
                         September 9, 2023
                       </span>
                     </div>
-                    <h4 className="text-3xl font-semibold text-neutral-800">
+                    <h4 className="text-3xl font-semibold text-neutral-800 max-md:text-2xl">
                       Cybersecurity in Finance: Protecting Your Assets
                     </h4>
                     <button

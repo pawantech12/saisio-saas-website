@@ -1,7 +1,7 @@
 const PasswordProtected = () => {
   return (
     <section className="flex justify-center items-center py-10">
-      <div className="w-1/3 space-y-4">
+      <div className="w-1/3 space-y-4 max-md:w-full px-5">
         <figure className="flex justify-center">
           <img
             src="./images/passwordprotected.png"
@@ -10,7 +10,7 @@ const PasswordProtected = () => {
           />
         </figure>
         <div className="flex flex-col items-center text-center">
-          <h3 className="text-[52px] font-semibold text-neutral-800 ">
+          <h3 className="text-[52px] font-semibold text-neutral-800 max-md:text-[40px]">
             Protected Page
           </h3>
           <form action="" className="space-y-5">

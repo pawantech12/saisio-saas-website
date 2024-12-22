@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <footer className="">
-      <div className="px-24 py-20 bg-lightPink flex justify-between">
+      <div className="px-24 py-20 bg-lightPink flex justify-between flex-wrap gap-20 max-md:px-5">
         <div className="flex flex-col gap-7">
           <figure>
             <img src="./images/logo.png" alt="logo image" />

@@ -8,16 +8,16 @@ const Register = () => {
         <div className="text-center bg-[url('/images/bgimg.jpg')] bg-cover px-24 py-28 rounded-br-full">
           {" "}
           <small className="text-2xl font-medium text-primary">Sign Up</small>
-          <h3 className="text-[52px] font-semibold text-neutral-800 ">
+          <h3 className="text-[52px] font-semibold text-neutral-800 max-md:text-[40px]">
             Create new account & join Our community today
           </h3>
         </div>
         <div className="my-16">
           <form
             action=""
-            className="mx-auto max-w-[600px] w-full flex flex-col gap-6 items-center"
+            className="mx-auto max-w-[600px] w-full flex flex-col gap-6 items-center px-5"
           >
-            <h4 className="text-[52px] font-semibold text-neutral-800 ">
+            <h4 className="text-[52px] font-semibold text-neutral-800 max-md:text-[40px]">
               Create New Account
             </h4>
             <input

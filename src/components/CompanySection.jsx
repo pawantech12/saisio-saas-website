@@ -1,6 +1,6 @@
 const CompanySection = () => {
   return (
-    <section className="py-20 px-24">
+    <section className="py-20 px-24 max-md:px-5">
       <div className="text-center">
         <h3 className="text-2xl font-medium text-neutral-800">
           <span className="text-primary">30,000+</span> Company Stream Manage

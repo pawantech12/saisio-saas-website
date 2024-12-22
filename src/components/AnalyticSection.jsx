@@ -4,19 +4,19 @@ import { Link } from "react-router-dom";
 const AnalyticSection = () => {
   const [activeTab, setActiveTab] = useState("projectmanagement");
   return (
-    <section className="px-24 py-24 bg-lightPink">
+    <section className="px-24 py-24 bg-lightPink max-md:px-5">
       <div className="text-center">
-        <h3 className="text-[52px] font-semibold text-neutral-800 ">
+        <h3 className="text-[52px] font-semibold text-neutral-800 max-md:text-[40px]">
           Analytics & Reporting Breakdown Built for teams from 1 to 1k+
         </h3>
       </div>
       <div className="flex justify-center">
-        <div className="mx-auto mt-6 max-w-[1290px] w-full border border-title rounded-xl shadow-[4px_4px_0_0] shadow-title bg-white px-[70px] py-[60px] flex flex-col items-center">
+        <div className="mx-auto mt-6 max-w-[1290px] w-full border border-title rounded-xl shadow-[4px_4px_0_0] shadow-title bg-white px-[70px] py-[60px] flex flex-col items-center max-md:max-w-full max-md:p-5">
           {/* Tab Navigation */}
-          <div className="flex gap-11 border border-title rounded-xl shadow-[4px_4px_0_0] shadow-title px-20 w-fit">
+          <div className="flex gap-11 max-lg:gap-x-7 border border-title rounded-xl shadow-[4px_4px_0_0] shadow-title px-20 w-fit flex-wrap gap-y-0 max-lg:py-2 max-lg:justify-center">
             {/* All Posts Tab */}
             <button
-              className={`py-4 text-xl font-semibold transition-colors ease-in-out duration-200 ${
+              className={`py-4 text-xl font-semibold transition-colors ease-in-out duration-200 max-lg:py-1 ${
                 activeTab === "projectmanagement"
                   ? " text-primary"
                   : " text-title"
@@ -28,7 +28,7 @@ const AnalyticSection = () => {
 
             {/* Saved Posts Tab */}
             <button
-              className={`py-4 text-xl font-semibold transition-colors ease-in-out duration-200 ${
+              className={`py-4 text-xl font-semibold transition-colors ease-in-out duration-200 max-lg:py-1 ${
                 activeTab === "engineering" ? " text-primary" : " text-title"
               }`}
               onClick={() => setActiveTab("engineering")}
@@ -36,7 +36,7 @@ const AnalyticSection = () => {
               Engineering
             </button>
             <button
-              className={`py-4 text-xl font-semibold transition-colors ease-in-out duration-200 ${
+              className={`py-4 text-xl font-semibold transition-colors ease-in-out duration-200 max-lg:py-1 ${
                 activeTab === "sales" ? " text-primary" : " text-title"
               }`}
               onClick={() => setActiveTab("sales")}
@@ -44,7 +44,7 @@ const AnalyticSection = () => {
               Sales
             </button>
             <button
-              className={`py-4 text-xl font-semibold transition-colors ease-in-out duration-200 ${
+              className={`py-4 text-xl font-semibold transition-colors ease-in-out duration-200 max-lg:py-1 ${
                 activeTab === "marketing" ? " text-primary" : " text-title"
               }`}
               onClick={() => setActiveTab("marketing")}
@@ -57,17 +57,18 @@ const AnalyticSection = () => {
           <div className="mt-6">
             {activeTab === "projectmanagement" && (
               // All Posts Section
-              <div className="w-full flex items-center gap-10 mt-10 animate-fadeIn">
-                <div className="w-1/2">
+              <div className="w-full flex items-center gap-10 mt-10 animate-fadeIn max-lg:flex-col">
+                <div className="w-1/2 max-lg:w-full">
                   <figure>
                     <img
                       src="./images/analytic.png"
                       alt="project analytic image"
+                      className="w-full h-full object-cover"
                     />
                   </figure>
                 </div>
-                <div className="w-1/2 space-y-5">
-                  <h4 className="text-[40px] font-semibold">
+                <div className="w-1/2 space-y-5 max-lg:w-full">
+                  <h4 className="text-[40px] font-semibold max-md:text-2xl">
                     Project Management.
                   </h4>
                   <p className="text-xl text-zinc-500">
@@ -129,17 +130,20 @@ const AnalyticSection = () => {
             )}
             {activeTab === "engineering" && (
               // All Posts Section
-              <div className="w-full flex items-center gap-10 mt-10 animate-fadeIn">
-                <div className="w-1/2">
+              <div className="w-full flex items-center gap-10 mt-10 animate-fadeIn max-lg:flex-col">
+                <div className="w-1/2 max-lg:w-full">
                   <figure>
                     <img
                       src="./images/engineering.png"
                       alt="engineering image"
+                      className="w-full h-full object-cover"
                     />
                   </figure>
                 </div>
-                <div className="w-1/2 space-y-5">
-                  <h4 className="text-[40px] font-semibold">Engineering</h4>
+                <div className="w-1/2 space-y-5 max-lg:w-full">
+                  <h4 className="text-[40px] font-semibold max-md:text-2xl">
+                    Engineering
+                  </h4>
                   <p className="text-xl text-zinc-500">
                     By harnessing the power of data, production engineers can
                     improve efficiency, quality, and overall performance in
@@ -199,14 +203,20 @@ const AnalyticSection = () => {
             )}
             {activeTab === "sales" && (
               // All Posts Section
-              <div className="w-full flex items-center gap-10 mt-10 animate-fadeIn">
-                <div className="w-1/2">
+              <div className="w-full flex items-center gap-10 mt-10 animate-fadeIn max-lg:flex-col">
+                <div className="w-1/2 max-lg:w-full">
                   <figure>
-                    <img src="./images/sales.png" alt="sales image" />
+                    <img
+                      src="./images/sales.png"
+                      alt="sales image"
+                      className="w-full h-full object-cover"
+                    />
                   </figure>
                 </div>
-                <div className="w-1/2 space-y-5">
-                  <h4 className="text-[40px] font-semibold">Sales</h4>
+                <div className="w-1/2 space-y-5 max-lg:w-full">
+                  <h4 className="text-[40px] font-semibold max-md:text-2xl">
+                    Sales
+                  </h4>
                   <p className="text-xl text-zinc-500">
                     Plays a crucial role in generating sales by providing
                     valuable insights and data-driven strategies to improve
@@ -265,14 +275,20 @@ const AnalyticSection = () => {
             )}
             {activeTab === "marketing" && (
               // All Posts Section
-              <div className="w-full flex items-center gap-10 mt-10 animate-fadeIn">
-                <div className="w-1/2">
+              <div className="w-full flex items-center gap-10 mt-10 animate-fadeIn max-lg:flex-col">
+                <div className="w-1/2 max-lg:w-full">
                   <figure>
-                    <img src="./images/marketing.png" alt="marketing image" />
+                    <img
+                      src="./images/marketing.png"
+                      alt="marketing image"
+                      className="w-full h-full object-cover"
+                    />
                   </figure>
                 </div>
-                <div className="w-1/2 space-y-5">
-                  <h4 className="text-[40px] font-semibold">Marketing</h4>
+                <div className="w-1/2 space-y-5 max-lg:w-full">
+                  <h4 className="text-[40px] font-semibold max-md:text-2xl">
+                    Marketing
+                  </h4>
                   <p className="text-xl text-zinc-500">
                     Empowers marketing teams with data-driven insights and tools
                     to enhance their decision-making processes, optimize

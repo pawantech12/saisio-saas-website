@@ -7,15 +7,15 @@ const About = () => {
   return (
     <>
       <section>
-        <div className="text-center bg-[url('/images/bgimg.jpg')] bg-cover px-24 py-28 rounded-br-full">
+        <div className="text-center bg-[url('/images/bgimg.jpg')] bg-cover px-24 py-28 rounded-br-full max-md:px-5">
           {" "}
           <small className="text-2xl font-medium text-primary">About Us</small>
-          <h3 className="text-[52px] font-semibold text-neutral-800 ">
+          <h3 className="text-[52px] font-semibold text-neutral-800 max-md:text-[40px]">
             Transforming raw data into informed choices
           </h3>
         </div>
 
-        <div className="mx-auto p-6 gap-10 grid grid-cols-2 auto-rows-auto my-10 px-24">
+        <div className="mx-auto p-6 gap-10 grid grid-cols-2 auto-rows-auto my-10 px-24 max-lg:px-5 max-md:grid-cols-1">
           <div>
             <figure className="border border-title rounded-lg shadow-[4px_4px_0_0] shadow-title">
               <img
@@ -32,7 +32,7 @@ const About = () => {
                 mark or an established enterprise seeking to stay ahead, we
                 provide the insights and solutions you need to succeed.
               </p>
-              <div className="flex items-center gap-7">
+              <div className="flex items-center gap-7 max-[500px]:flex-col">
                 <button
                   className="
           border border-title 
@@ -51,6 +51,7 @@ const About = () => {
           hover:bg-title 
           hover:shadow-none 
           hover:translate-x-1 hover:translate-y-1
+          max-[500px]:w-full
         "
                 >
                   Start Free Trial
@@ -74,6 +75,7 @@ const About = () => {
           hover:text-white 
           hover:shadow-none 
           hover:translate-x-1 hover:translate-y-1
+          max-[500px]:w-full
         "
                 >
                   Get Started
@@ -85,18 +87,18 @@ const About = () => {
             <img
               src="images/about2.jpg"
               alt="about 2 image"
-              className="rounded-lg"
+              className="rounded-lg w-full h-full object-cover"
             />
           </div>
         </div>
       </section>
-      <section className="px-24 py-24 bg-lightPink">
+      <section className="px-24 py-24 bg-lightPink max-md:px-5">
         <div>
-          <h3 className="text-[52px] font-semibold text-neutral-800 ">
+          <h3 className="text-[52px] font-semibold text-neutral-800 max-md:text-[40px]">
             You will get best features to help your daily work
           </h3>
         </div>
-        <div className="mt-16 grid grid-cols-3 gap-5">
+        <div className="mt-16 grid grid-cols-3 gap-5 max-lg:grid-cols-2 max-sm:grid-cols-1">
           <div className="flex flex-col gap-5 border border-title rounded-lg shadow-[4px_4px_0_0] shadow-title h-fit p-7 py-10 bg-white">
             <div className=" flex justify-center">
               <img

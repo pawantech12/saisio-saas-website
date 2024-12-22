@@ -11,7 +11,7 @@ const SingleBlog = () => {
   return (
     <>
       <section>
-        <div className="text-center bg-[url('/images/bgimg.jpg')] bg-cover px-24 py-28 rounded-br-full">
+        <div className="text-center bg-[url('/images/bgimg.jpg')] bg-cover px-24 py-28 rounded-br-full max-md:px-5">
           {" "}
           <div className="flex items-center justify-center gap-5">
             <span className="px-4 py-[3px] bg-lighterPink text-zinc-700 hover:bg-zinc-600 hover:text-white rounded-full transition-colors ease-in-out duration-200 text-lg">
@@ -19,11 +19,11 @@ const SingleBlog = () => {
             </span>
             <span className="text-lg text-zinc-600">September 9, 2023</span>
           </div>
-          <h3 className="text-[52px] font-semibold text-neutral-800 ">
+          <h3 className="text-[52px] font-semibold text-neutral-800 max-md:text-[40px]">
             Exploring Data Privacy and Security in Business Analysis Apps
           </h3>
         </div>
-        <div className="px-24 ">
+        <div className="px-24 max-lg:px-5">
           <figure className="border border-title rounded-xl shadow-[4px_4px_0_0] shadow-title w-full">
             <img
               src="./images/blog1.jpg"
@@ -31,7 +31,7 @@ const SingleBlog = () => {
               className="w-full object-cover rounded-xl"
             />
           </figure>
-          <div className="space-y-10 mt-12">
+          <div className="space-y-10 mt-12 max-md:space-y-7">
             <p className="text-xl text-zinc-700">
               In today's data-driven business landscape, organizations rely
               heavily on business analysis applications to extract valuable
@@ -41,7 +41,7 @@ const SingleBlog = () => {
               aspects of maintaining data privacy and security when utilizing
               business analysis apps.
             </p>
-            <h3 className="text-5xl font-semibold text-neutral-800">
+            <h3 className="text-5xl font-semibold text-neutral-800 max-md:text-[40px]">
               Data Encryption and Storage:
             </h3>
             <p className="text-xl text-zinc-700">
@@ -53,7 +53,7 @@ const SingleBlog = () => {
               Standard) and HTTPS can significantly mitigate the risk of
               unauthorized access.
             </p>
-            <h4 className="text-3xl font-medium text-neutral-800">
+            <h4 className="text-3xl font-medium text-neutral-800 max-md:text-2xl">
               Access Control and Authentication:
             </h4>
             <p className="text-xl text-zinc-700">
@@ -64,7 +64,7 @@ const SingleBlog = () => {
               an extra layer of security by requiring users to provide multiple
               forms of verification before gaining access.
             </p>
-            <h4 className="text-3xl font-medium text-neutral-800">
+            <h4 className="text-3xl font-medium text-neutral-800 max-md:text-2xl">
               Regular Security Audits:
             </h4>
             <p className="text-xl text-zinc-700">
@@ -74,7 +74,7 @@ const SingleBlog = () => {
               exploited by malicious actors. Addressing these vulnerabilities
               promptly enhances the overall security posture of the application.
             </p>
-            <h4 className="text-3xl font-medium text-neutral-800">
+            <h4 className="text-3xl font-medium text-neutral-800 max-md:text-2xl">
               Data Minimization and Retention Policies:
             </h4>
             <p className="text-xl text-zinc-700">
@@ -96,7 +96,7 @@ const SingleBlog = () => {
                 organization's requirements.
               </p>
             </div>
-            <h4 className="text-3xl font-medium text-neutral-800">
+            <h4 className="text-3xl font-medium text-neutral-800 max-md:text-2xl">
               User Training and Awareness:
             </h4>
             <p className="text-xl text-zinc-700">
@@ -106,7 +106,7 @@ const SingleBlog = () => {
               protocols can significantly reduce the risk of unintentional
               breaches.
             </p>
-            <h4 className="text-3xl font-medium text-neutral-800">
+            <h4 className="text-3xl font-medium text-neutral-800 max-md:text-2xl">
               Conclusion:
             </h4>
             <p className="text-xl text-zinc-700">
@@ -120,16 +120,16 @@ const SingleBlog = () => {
               customers and stakeholders alike.
             </p>
           </div>
-          <div className="border border-title rounded-xl shadow-[4px_4px_0_0] shadow-title my-10 px-10 py-10 flex items-center gap-8 bg-lightPink">
-            <figure className="w-1/5">
+          <div className="border border-title rounded-xl shadow-[4px_4px_0_0] shadow-title my-10 px-10 py-10 flex items-center gap-8 bg-lightPink max-sm:flex-col max-sm:px-5">
+            <figure className="w-1/5 max-sm:w-fit">
               <img
                 src="./images/profile.jpg"
                 alt="profile image"
-                className="w-full h-full rounded-full border border-title"
+                className="w-full h-full max-sm:w-40 max-sm:h-40 rounded-full border border-title"
               />
             </figure>
-            <div className="w-9/12">
-              <div className="flex items-center justify-between">
+            <div className="w-9/12 max-sm:w-full">
+              <div className="flex items-center justify-between max-[450px]:flex-col text-center gap-5">
                 <div>
                   <h3 className="text-2xl font-semibold text-neutral-800 ">
                     Colin Mathieu
@@ -248,7 +248,7 @@ const SingleBlog = () => {
                   </li>
                 </ul>
               </div>
-              <p className="text-xl text-zinc-600 mt-4">
+              <p className="text-xl text-zinc-600 mt-4 max-[450px]:text-center">
                 Peering into the numbers, we unveil the hidden stories they
                 tell. In the world of finance, every data point is a
                 brushstroke, painting a picture of market trends and investment
@@ -258,9 +258,9 @@ const SingleBlog = () => {
           </div>
         </div>
       </section>
-      <section className="px-24 my-20">
-        <div className="flex justify-between gap-5 items-center">
-          <h3 className="text-[52px] font-semibold text-neutral-800 w-1/2 leading-[3.7rem]">
+      <section className="px-24 my-20 max-lg:px-5">
+        <div className="flex justify-between gap-5 items-center max-sm:flex-col">
+          <h3 className="text-[52px] font-semibold text-neutral-800 w-1/2 leading-[3.7rem] max-lg:text-[40px] max-lg:leading-[3rem] max-sm:w-full text-center">
             More post from similar category
           </h3>
           <button
@@ -288,7 +288,7 @@ const SingleBlog = () => {
             More Articles
           </button>
         </div>
-        <div className="grid grid-cols-3 gap-5 mt-14">
+        <div className="grid grid-cols-3 gap-5 mt-14 max-lg:grid-cols-2 max-sm:grid-cols-1">
           {[1, 2, 3].map((item, index) => {
             return (
               <div

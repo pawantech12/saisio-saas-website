@@ -2,16 +2,16 @@ import { Link } from "react-router-dom";
 
 const HeroSection = () => {
   return (
-    <section className="flex items-center justify-between h-[120vh]  bg-[url('/images/bgimg.jpg')] bg-cover px-24">
-      <div className="flex flex-col gap-10 w-1/2">
-        <h1 className="font-semibold text-7xl">
+    <section className="flex items-center justify-between h-[120vh]  bg-[url('/images/bgimg.jpg')] bg-cover px-24 max-lg:flex-col max-lg:h-full max-lg:py-40 max-lg:gap-10 max-sm:px-5">
+      <div className="flex flex-col gap-10 w-1/2 max-lg:w-full max-lg:items-center max-lg:text-center">
+        <h1 className="font-semibold text-7xl max-lg:text-5xl max-md:text-[40px]">
           Take your real data analytics to your business.
         </h1>
-        <p className="text-xl text-zinc-700">
+        <p className="text-xl max-lg:text-lg text-zinc-700">
           Customer satisfaction is at the core of our business philosophy. We
           strive to build long-lasting relationships with our clients.
         </p>
-        <div className="flex items-center gap-8">
+        <div className="flex items-center gap-8 max-sm:flex-col">
           <button
             className="
           border border-title 
@@ -44,7 +44,7 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
-      <div className="w-2/5">
+      <div className="w-2/5 max-lg:w-full">
         <img
           src="./images/hero.png"
           alt="hero section image"

@@ -4,16 +4,16 @@ const Integration = () => {
   return (
     <>
       <section>
-        <div className="text-center bg-[url('/images/bgimg.jpg')] bg-cover px-24 py-28 rounded-br-full">
+        <div className="text-center bg-[url('/images/bgimg.jpg')] bg-cover px-24 py-28 rounded-br-full max-md:px-5">
           {" "}
           <small className="text-2xl font-medium text-primary">
             Integrations
           </small>
-          <h3 className="text-[52px] font-semibold text-neutral-800 ">
+          <h3 className="text-[52px] font-semibold text-neutral-800 max-md:text-[40px]">
             Connect popular apps that are important to you
           </h3>
         </div>
-        <div className="my-16 grid grid-cols-3 gap-5  px-24 ">
+        <div className="my-16 grid grid-cols-3 gap-5  px-24 max-lg:px-5 max-lg:grid-cols-2 max-sm:grid-cols-1">
           <div className="border border-title rounded-xl shadow-[4px_4px_0_0] shadow-title">
             <div className="p-10 flex items-center gap-4 bg-lightPink rounded-xl">
               <figure className="border border-title rounded-full w-[85px] h-[85px] shadow-[4px_4px_0_0] shadow-title flex items-center justify-center">
