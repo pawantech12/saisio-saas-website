@@ -19,7 +19,7 @@ const SingleBlog = () => {
             </span>
             <span className="text-lg text-zinc-600">September 9, 2023</span>
           </div>
-          <h3 className="text-[52px] font-semibold text-neutral-800 max-md:text-[40px]">
+          <h3 className="text-[52px] font-semibold text-neutral-800 max-md:text-[40px] max-md:leading-[3rem]">
             Exploring Data Privacy and Security in Business Analysis Apps
           </h3>
         </div>
@@ -41,7 +41,7 @@ const SingleBlog = () => {
               aspects of maintaining data privacy and security when utilizing
               business analysis apps.
             </p>
-            <h3 className="text-5xl font-semibold text-neutral-800 max-md:text-[40px]">
+            <h3 className="text-5xl font-semibold text-neutral-800 max-md:text-[40px] max-md:leading-[3rem]">
               Data Encryption and Storage:
             </h3>
             <p className="text-xl text-zinc-700">

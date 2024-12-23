@@ -9,7 +9,7 @@ const Integration = () => {
           <small className="text-2xl font-medium text-primary">
             Integrations
           </small>
-          <h3 className="text-[52px] font-semibold text-neutral-800 max-md:text-[40px]">
+          <h3 className="text-[52px] font-semibold text-neutral-800 max-md:text-[40px] max-md:leading-[3rem]">
             Connect popular apps that are important to you
           </h3>
         </div>

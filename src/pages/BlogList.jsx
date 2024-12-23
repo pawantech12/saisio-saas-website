@@ -9,7 +9,7 @@ const BlogList = () => {
           <small className="text-2xl font-medium text-primary">
             News & Articles
           </small>
-          <h3 className="text-[52px] font-semibold text-neutral-800 max-md:text-[40px]">
+          <h3 className="text-[52px] font-semibold text-neutral-800 max-md:text-[40px] max-md:leading-[3rem]">
             Browse our latest articles & news
           </h3>
         </div>

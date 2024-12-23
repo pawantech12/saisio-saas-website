@@ -4,7 +4,7 @@ const HeroSection = () => {
   return (
     <section className="flex items-center justify-between h-[120vh]  bg-[url('/images/bgimg.jpg')] bg-cover px-24 max-lg:flex-col max-lg:h-full max-lg:py-40 max-lg:gap-10 max-sm:px-5">
       <div className="flex flex-col gap-10 w-1/2 max-lg:w-full max-lg:items-center max-lg:text-center">
-        <h1 className="font-semibold text-7xl max-lg:text-5xl max-md:text-[40px]">
+        <h1 className="font-semibold text-7xl max-lg:text-5xl max-md:text-[40px] max-md:leading-[3rem]">
           Take your real data analytics to your business.
         </h1>
         <p className="text-xl max-lg:text-lg text-zinc-700">

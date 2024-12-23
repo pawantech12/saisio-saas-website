@@ -10,7 +10,7 @@ const About = () => {
         <div className="text-center bg-[url('/images/bgimg.jpg')] bg-cover px-24 py-28 rounded-br-full max-md:px-5">
           {" "}
           <small className="text-2xl font-medium text-primary">About Us</small>
-          <h3 className="text-[52px] font-semibold text-neutral-800 max-md:text-[40px]">
+          <h3 className="text-[52px] font-semibold text-neutral-800 max-md:text-[40px] max-md:leading-[3rem]">
             Transforming raw data into informed choices
           </h3>
         </div>
@@ -94,7 +94,7 @@ const About = () => {
       </section>
       <section className="px-24 py-24 bg-lightPink max-md:px-5">
         <div>
-          <h3 className="text-[52px] font-semibold text-neutral-800 max-md:text-[40px]">
+          <h3 className="text-[52px] font-semibold text-neutral-800 max-md:text-[40px] max-md:leading-[3rem]">
             You will get best features to help your daily work
           </h3>
         </div>

@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "react-router-dom";
 
 const SingleIntegration = () => {
@@ -18,7 +17,7 @@ const SingleIntegration = () => {
       <section className=" px-24 my-10 max-lg:px-5">
         <div className="p-16 rounded-xl bg-lightPink flex items-center justify-between gap-5 max-lg:flex-col max-lg:items-start max-md:p-10">
           <div className="w-1/2 space-y-6 max-lg:w-full">
-            <h4 className="text-5xl font-semibold text-neutral-800 max-lg:text[40px] max-sm:text-4xl">
+            <h4 className="text-5xl font-semibold text-neutral-800 max-lg:text[40px] max-sm:text-4xl max-md:leading-[3rem]">
               Integrate Shopify with Saisio
             </h4>
             <p className="text-2xl ">
@@ -57,7 +56,7 @@ const SingleIntegration = () => {
         </figure>
         <div className="mt-10 flex gap-5 relative max-md:flex-col-reverse">
           <div className="space-y-6  w-4/6 max-md:w-full">
-            <h3 className="text-5xl font-semibold text-neutral-800  max-md:text-[40px]">
+            <h3 className="text-5xl font-semibold text-neutral-800  max-md:text-[40px] max-md:leading-[3rem]">
               How to Integrate?
             </h3>
             <p className="text-xl">

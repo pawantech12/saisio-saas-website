@@ -6,7 +6,7 @@ const AnalyticSection = () => {
   return (
     <section className="px-24 py-24 bg-lightPink max-md:px-5">
       <div className="text-center">
-        <h3 className="text-[52px] font-semibold text-neutral-800 max-md:text-[40px]">
+        <h3 className="text-[52px] font-semibold text-neutral-800 max-md:text-[40px] max-md:leading-[3rem]">
           Analytics & Reporting Breakdown Built for teams from 1 to 1k+
         </h3>
       </div>

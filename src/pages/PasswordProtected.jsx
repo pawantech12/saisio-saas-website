@@ -10,7 +10,7 @@ const PasswordProtected = () => {
           />
         </figure>
         <div className="flex flex-col items-center text-center">
-          <h3 className="text-[52px] font-semibold text-neutral-800 max-md:text-[40px]">
+          <h3 className="text-[52px] font-semibold text-neutral-800 max-md:text-[40px] max-md:leading-[3rem]">
             Protected Page
           </h3>
           <form action="" className="space-y-5">

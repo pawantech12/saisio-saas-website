@@ -2,7 +2,7 @@ const TrackSection = () => {
   return (
     <section className="px-24 py-20 flex items-center justify-between h-screen gap-5 max-md:h-full max-md:px-5">
       <div className="w-1/2 space-y-10 max-lg:w-full">
-        <h3 className="text-5xl font-semibold text-neutral-800 leading-[60px] max-md:text-[40px] max-md:leading-[48px]">
+        <h3 className="text-5xl font-semibold text-neutral-800 leading-[60px] max-md:text-[40px] max-md:leading-[3rem]">
           We make it easy to track all users analytics.
         </h3>
         <p className="text-zinc-500 text-xl max-md:text-lg">

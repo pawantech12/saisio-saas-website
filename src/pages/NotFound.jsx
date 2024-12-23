@@ -7,7 +7,7 @@ const NotFound = () => {
         <figure>
           <img src={notFoundImg} alt="404 not found image" />
         </figure>
-        <h3 className="text-[52px] font-semibold text-neutral-800 max-md:text-[40px]">
+        <h3 className="text-[52px] font-semibold text-neutral-800 max-md:text-[40px] max-md:leading-[3rem]">
           Page Not Found
         </h3>
         <button

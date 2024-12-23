@@ -8,7 +8,7 @@ const Login = () => {
         <div className="text-center bg-[url('/images/bgimg.jpg')] bg-cover px-24 py-28 rounded-br-full max-md:px-5">
           {" "}
           <small className="text-2xl font-medium text-primary">Log In</small>
-          <h3 className="text-[52px] font-semibold text-neutral-800 max-md:text-[40px]">
+          <h3 className="text-[52px] font-semibold text-neutral-800 max-md:text-[40px] max-md:leading-[3rem]">
             Enter your credentials to access your account
           </h3>
         </div>
@@ -17,7 +17,7 @@ const Login = () => {
             action=""
             className="mx-auto max-w-[600px] w-full flex flex-col gap-6 items-center max-md:px-5"
           >
-            <h4 className="text-[52px] font-semibold text-neutral-800 max-md:text-[40px]">
+            <h4 className="text-[52px] font-semibold text-neutral-800 max-md:text-[40px] max-md:leading-[3rem]">
               Log in
             </h4>
 

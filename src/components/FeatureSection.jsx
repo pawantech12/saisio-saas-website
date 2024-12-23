@@ -2,7 +2,7 @@ const FeatureSection = () => {
   return (
     <section className="px-24 py-24 bg-lightPink max-md:px-5">
       <div className="text-center">
-        <h3 className="text-[52px] font-semibold text-neutral-800 max-md:text-[40px]">
+        <h3 className="text-[52px] font-semibold text-neutral-800 max-md:text-[40px] max-md:leading-[3rem]">
           You will get best features to help your daily work
         </h3>
       </div>

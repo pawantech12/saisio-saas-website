@@ -5,10 +5,10 @@ const Register = () => {
   return (
     <>
       <section>
-        <div className="text-center bg-[url('/images/bgimg.jpg')] bg-cover px-24 py-28 rounded-br-full">
+        <div className="text-center bg-[url('/images/bgimg.jpg')] bg-cover px-24 py-28 rounded-br-full max-md:px-5">
           {" "}
           <small className="text-2xl font-medium text-primary">Sign Up</small>
-          <h3 className="text-[52px] font-semibold text-neutral-800 max-md:text-[40px]">
+          <h3 className="text-[52px] font-semibold text-neutral-800 max-md:text-[40px] max-md:leading-[3rem]">
             Create new account & join Our community today
           </h3>
         </div>
@@ -17,7 +17,7 @@ const Register = () => {
             action=""
             className="mx-auto max-w-[600px] w-full flex flex-col gap-6 items-center px-5"
           >
-            <h4 className="text-[52px] font-semibold text-neutral-800 max-md:text-[40px]">
+            <h4 className="text-[52px] font-semibold text-neutral-800 max-md:text-[40px] max-md:leading-[3rem] max-sm:text-center">
               Create New Account
             </h4>
             <input

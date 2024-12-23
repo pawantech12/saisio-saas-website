@@ -17,7 +17,7 @@ const Pricing = () => {
         <div className="text-center bg-[url('/images/bgimg.jpg')] bg-cover px-24 py-28 rounded-br-full max-md:px-5">
           {" "}
           <small className="text-2xl font-medium text-primary">Pricing</small>
-          <h3 className="text-[52px] font-semibold text-neutral-800 max-md:text-[40px]">
+          <h3 className="text-[52px] font-semibold text-neutral-800 max-md:text-[40px] max-md:leading-[3rem]">
             Pricing that fits your needs
           </h3>
         </div>
@@ -154,7 +154,7 @@ const Pricing = () => {
       <section className="px-24 py-20 bg-lightPink max-lg:px-5">
         <div className="text-center space-y-5">
           {" "}
-          <h3 className="text-[52px] font-semibold text-neutral-800 max-md:text-[40px]">
+          <h3 className="text-[52px] font-semibold text-neutral-800 max-md:text-[40px] max-md:leading-[3rem]">
             Frequently asked questions
           </h3>
           <p className="text-xl text-zinc-600">

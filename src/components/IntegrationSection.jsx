@@ -4,7 +4,7 @@ const IntegrationSection = () => {
   return (
     <section className="px-24 py-24 max-md:px-5">
       <div className="text-center">
-        <h3 className="text-[52px] font-semibold text-neutral-800 max-md:text-[40px]">
+        <h3 className="text-[52px] font-semibold text-neutral-800 max-md:text-[40px] max-md:leading-[3rem]">
           Integrated with all the tools you know and love
         </h3>
       </div>

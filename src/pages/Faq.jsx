@@ -13,14 +13,14 @@ const Faq = () => {
   return (
     <>
       <section>
-        <div className="text-center bg-[url('/images/bgimg.jpg')] bg-cover px-24 py-28 rounded-br-full">
+        <div className="text-center bg-[url('/images/bgimg.jpg')] bg-cover px-24 py-28 rounded-br-full max-md:px-5">
           {" "}
           <small className="text-2xl font-medium text-primary">FAQ </small>
-          <h3 className="text-[52px] font-semibold text-neutral-800 ">
+          <h3 className="text-[52px] font-semibold text-neutral-800 max-md:text-[40px] max-md:leading-[3rem]">
             Take a look at the frequently asked question.
           </h3>
         </div>
-        <div className=" mx-auto p-6 gap-5 grid grid-cols-2 auto-rows-auto my-10 px-24">
+        <div className=" mx-auto  gap-5 grid grid-cols-2 auto-rows-auto my-10 px-24 max-lg:grid-cols-1 max-lg:px-5">
           {accordionData.map((item, index) => (
             <div
               key={index}

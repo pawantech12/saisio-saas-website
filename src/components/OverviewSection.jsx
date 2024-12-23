@@ -20,7 +20,7 @@ const OverviewSection = () => {
         />
       </div>
       <div className="w-1/2 space-y-10 max-lg:w-full">
-        <h3 className="text-5xl font-semibold text-neutral-800 max-md:text-[40px]">
+        <h3 className="text-5xl font-semibold text-neutral-800 max-md:text-[40px] max-md:leading-[3rem]">
           A big and simple financial overview.
         </h3>
         <p className="text-zinc-500 text-xl max-md:text-lg">

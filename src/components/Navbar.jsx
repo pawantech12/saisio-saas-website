@@ -45,7 +45,7 @@ const Navbar = () => {
       <div className="px-6 lg:px-24 py-5 flex items-center justify-between">
         <div>
           <Link>
-            <img src={logoImg} alt="Logo Image" />
+            <img src={logoImg} alt="Logo Image" className="max-sm:w-28" />
           </Link>
         </div>
         <button

@@ -9,7 +9,7 @@ const ForgotPassword = () => {
           <small className="text-2xl font-medium text-primary">
             Forgot Password
           </small>
-          <h3 className="text-[52px] font-semibold text-neutral-800 max-md:text-[40px]">
+          <h3 className="text-[52px] font-semibold text-neutral-800 max-md:text-[40px] max-md:leading-[3rem]">
             Forgot your password. Recover now
           </h3>
         </div>
@@ -18,7 +18,7 @@ const ForgotPassword = () => {
             action=""
             className="mx-auto max-w-[600px] w-full flex flex-col gap-6 items-center max-md:px-5"
           >
-            <h4 className="text-[52px] font-semibold text-neutral-800 max-md:text-[40px]">
+            <h4 className="text-[52px] font-semibold text-neutral-800 max-md:text-[40px] max-md:leading-[3rem] text-center">
               Recover Password
             </h4>
 
